@@ -29,10 +29,11 @@ test:
   host: localhost
 
 production:
-  encoding: unicode
-  adapter: postgresql
-  username: ojxnslnjnh
-  port: 5432
-  host: ec2-50-16-205-219.compute-1.amazonaws.com
-  database: ojxnslnjnh
-  password: v92nwIY1nZ7xi99HYeX7
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: tdd_production
+  pool: 5
+  username: root
+  password:
+  host: localhost
