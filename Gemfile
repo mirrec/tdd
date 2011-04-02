@@ -6,6 +6,12 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
+#gem 'mongrel', '>=1.2.0.pre2'
+#depemdency mongrel
+#gem 'gem_plugin', ">=0.2.3"
+#gem 'daemons', ">=1.0.3"
+#gem 'fastthread', '>=1.0.1'
+#gem 'cgi_multipart_eof_fix', '>=2.4'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -29,3 +35,12 @@ gem 'mysql2'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+group :development do
+  gem 'rspec-rails', '2.3.0'
+end
+
+group :test do
+  gem 'rspec', '2.3.0'
+  gem 'webrat', '0.7.1'
+end
